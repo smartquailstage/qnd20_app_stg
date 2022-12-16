@@ -30,12 +30,12 @@ services:
     environment:
       - PORT=80
     depends_on:
-      - qnd00_app_stg
+      - qnd20_app_stg
     ports:
       - "80:80"
       - "443:443"
     volumes: 
-     - static-data-qnd20:/qnd20_app_stg/qnd20_app_stg/qnd20_app_stg/staticfiles
+      - static-data-qnd20:/qnd20_app_stg/qnd20_app_stg/qnd20_app_stg/staticfiles
       - static-data-qnd20:/qnd20_app_stg/qnd20_app_stg/qnd20_app_stg/media
       - static-data-qnd20:/qnd20_app_stg/qnd20_app_stg/qnd20_app_stg/static
     networks: 
